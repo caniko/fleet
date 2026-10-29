@@ -1,0 +1,75 @@
+# Fleet qualifies its components together; publication stays in each component repository.
+[ci]
+platform = "github"
+provider = "actions"
+runtime = "nix"
+runner = "ubuntu-24.04"
+
+[ci.cache]
+substituters = ["https://attic.candee.baby/canix", "https://cache.nixos.org"]
+trusted_public_keys = ["canix:lPzPzKrmYqW5Rxa5r0uQWvCqD3S5nx0h2eCy7XD5JM8=", "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="]
+
+[monorepo]
+schema_version = 1
+submodules = true
+ignore_paths = ["README.md", "docs"]
+
+[[monorepo.components]]
+id = "nix-manager-core"
+job = "libs"
+paths = ["components/nix-manager-core"]
+cargo_manifest = "components/nix-manager-core/Cargo.toml"
+cargo_packages = ["nix-manager-core"]
+checks = [{ id = "nix", run = "nix build --print-build-logs --no-link .#checks.x86_64-linux.component-nix-manager-core", timeout_minutes = 120 }]
+
+[[monorepo.components]]
+id = "fleetix"
+job = "libs"
+paths = ["components/fleetix"]
+cargo_manifest = "components/fleetix/Cargo.toml"
+cargo_packages = ["fleetix", "fleetix-sidecar"]
+checks = [{ id = "nix", run = "nix build --print-build-logs --no-link .#checks.x86_64-linux.component-fleetix", timeout_minutes = 120 }]
+
+[[monorepo.components]]
+id = "secret-manager"
+job = "libs"
+paths = ["components/secret-manager"]
+cargo_manifest = "components/secret-manager/Cargo.toml"
+cargo_packages = ["caniko-secret-manager"]
+depends_on = ["nix-manager-core"]
+checks = [{ id = "nix", run = "nix build --print-build-logs --no-link .#checks.x86_64-linux.component-secret-manager", timeout_minutes = 120 }]
+
+[[monorepo.components]]
+id = "dns-manager"
+job = "libs"
+paths = ["components/dns-manager"]
+cargo_manifest = "components/dns-manager/Cargo.toml"
+cargo_packages = ["dns-manager"]
+depends_on = ["nix-manager-core"]
+checks = [{ id = "nix", run = "nix build --print-build-logs --no-link .#checks.x86_64-linux.component-dns-manager", timeout_minutes = 120 }]
+
+[[monorepo.components]]
+id = "canix-toolbelt"
+job = "toolbelt"
+paths = ["components/canix-toolbelt"]
+cargo_manifest = "components/canix-toolbelt/Cargo.toml"
+cargo_packages = ["canix-toolbelt"]
+depends_on = ["fleetix", "secret-manager", "dns-manager"]
+checks = [{ id = "nix", run = "nix build --print-build-logs --no-link .#checks.x86_64-linux.component-canix-toolbelt", timeout_minutes = 120 }]
+
+[[monorepo.components]]
+id = "infernix"
+job = "infernix"
+paths = ["components/infernix"]
+cargo_manifest = "components/infernix/Cargo.toml"
+cargo_packages = ["infernix-lb", "infernix-workload", "infernix-workerd"]
+depends_on = ["fleetix"]
+checks = [{ id = "nix", run = "nix build --print-build-logs --no-link .#checks.x86_64-linux.component-infernix", timeout_minutes = 120 }]
+
+[[monorepo.components]]
+id = "bootswain"
+job = "bootswain"
+paths = ["components/bootswain"]
+cargo_manifest = "components/bootswain/Cargo.toml"
+cargo_packages = ["bootswain-cli", "bootswain-core", "bootswain-flash", "bootswain-probe"]
+checks = [{ id = "nix", run = "nix build --print-build-logs --no-link .#checks.x86_64-linux.component-bootswain", timeout_minutes = 120 }]

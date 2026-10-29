@@ -26,3 +26,7 @@
 	path = components/bootswain
 	url = https://github.com/caniko/bootswain.git
 	branch = trunk
+[submodule "components/ignitix"]
+	path = components/ignitix
+	url = https://github.com/caniko/ignitix.git
+	branch = trunk

@@ -73,3 +73,12 @@ paths = ["components/bootswain"]
 cargo_manifest = "components/bootswain/Cargo.toml"
 cargo_packages = ["bootswain-cli", "bootswain-core", "bootswain-flash", "bootswain-probe"]
 checks = [{ id = "nix", run = "nix build --print-build-logs --no-link .#checks.x86_64-linux.component-bootswain", timeout_minutes = 120 }]
+
+[[monorepo.components]]
+id = "ignitix"
+job = "bootswain"
+paths = ["components/ignitix"]
+cargo_manifest = "components/ignitix/Cargo.toml"
+cargo_packages = ["ignitix-unlock-luks"]
+depends_on = ["bootswain"]
+checks = [{ id = "nix", run = "nix build --print-build-logs --no-link .#checks.x86_64-linux.component-ignitix", timeout_minutes = 120 }]

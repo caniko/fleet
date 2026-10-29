@@ -16,7 +16,7 @@
       inputs.plinth.follows = "plinth";
     };
     # CI shell only. Its own lock keeps the derivation the prebuild cached.
-    simit.url = "github:caniko/simit/a7f857802fd71ca939e7529e538c19fda9c1f7b7";
+    simit.url = "github:caniko/simit/baac868484bc4761f0be08611b8458fc60960711";
 
     # Components. Sibling inputs follow the gitlinked checkout, so a consumer
     # is always qualified against its producers' exact revisions.
@@ -55,6 +55,12 @@
     bootswain = {
       url = "./components/bootswain";
       inputs.harbor-rs.follows = "harbor-rs";
+      inputs.plinth.follows = "plinth";
+    };
+    ignitix = {
+      url = "./components/ignitix";
+      inputs.bootswain.follows = "bootswain";
+      inputs.nixpkgs.follows = "nixpkgs";
       inputs.plinth.follows = "plinth";
     };
   };

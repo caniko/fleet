@@ -1,0 +1,32 @@
+[submodule "components/nix-manager-core"]
+	path = components/nix-manager-core
+	url = https://github.com/caniko/nix-manager-core.git
+	branch = trunk
+[submodule "components/fleetix"]
+	path = components/fleetix
+	url = https://github.com/caniko/fleetix.git
+	branch = trunk
+[submodule "components/secret-manager"]
+	path = components/secret-manager
+	url = https://github.com/caniko/secret-manager.git
+	branch = trunk
+[submodule "components/dns-manager"]
+	path = components/dns-manager
+	url = https://github.com/caniko/dns-manager.git
+	branch = trunk
+[submodule "components/canix-toolbelt"]
+	path = components/canix-toolbelt
+	url = https://github.com/caniko/canix-toolbelt.git
+	branch = trunk
+[submodule "components/infernix"]
+	path = components/infernix
+	url = https://github.com/caniko/infernix.git
+	branch = trunk
+[submodule "components/bootswain"]
+	path = components/bootswain
+	url = https://github.com/caniko/bootswain.git
+	branch = trunk
+[submodule "components/ignitix"]
+	path = components/ignitix
+	url = https://github.com/caniko/ignitix.git
+	branch = trunk

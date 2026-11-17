@@ -16,7 +16,7 @@
       inputs.plinth.follows = "plinth";
     };
     # CI shell only. Its own lock keeps the derivation the prebuild cached.
-    simit.url = "github:caniko/simit/baac868484bc4761f0be08611b8458fc60960711";
+    simit.url = "github:caniko/simit/e69226f64697964c5bb7ad659ac8dfb363c6e7ec";
 
     # Components. Sibling inputs follow the gitlinked checkout, so a consumer
     # is always qualified against its producers' exact revisions.

@@ -57,11 +57,7 @@
           "harbor-rs",
           "rust-overlay"
         ],
-        "treefmt-nix": [
-          "bootswain",
-          "harbor-rs",
-          "treefmt-nix"
-        ]
+        "treefmt-nix": "treefmt-nix"
       },
       "locked": {
         "path": "./components/bootswain",
@@ -207,7 +203,7 @@
         "secret-manager": [
           "secret-manager"
         ],
-        "treefmt-nix": "treefmt-nix_3",
+        "treefmt-nix": "treefmt-nix_4",
         "wrapper-manager": "wrapper-manager"
       },
       "locked": {
@@ -664,7 +660,7 @@
           "harbor-rs",
           "rust-overlay"
         ],
-        "treefmt-nix": "treefmt-nix_4"
+        "treefmt-nix": "treefmt-nix_5"
       },
       "locked": {
         "path": "./components/dns-manager",
@@ -3368,6 +3364,7 @@
         "git-hooks": "git-hooks_23",
         "home-manager": "home-manager_3",
         "nix-bundle": "nix-bundle_11",
+        "nix-cache-pin": "nix-cache-pin_7",
         "nix-opencode-lsp": "nix-opencode-lsp_15",
         "nixpkgs": "nixpkgs_16",
         "nixpkgs-darwin": "nixpkgs-darwin_3",
@@ -3380,21 +3377,23 @@
         "simit": "simit_2",
         "solana-source": "solana-source",
         "solana-source-darwin": "solana-source-darwin",
-        "treefmt-nix": "treefmt-nix_29",
+        "treefmt-nix": "treefmt-nix_30",
         "uv2nix": "uv2nix_4"
       },
       "locked": {
-        "lastModified": 1791778105,
-        "narHash": "sha256-UC6/dm4WiJ37j59d4UEzyfBD1p+VZKltutvcinMVIUQ=",
+        "lastModified": 1794240040,
+        "narHash": "sha256-qwoci30KM0OHArqDRK5SemaaCmtOR1eOxsqTBQSeCmU=",
         "ref": "feat/harbor-monorepo-components",
-        "rev": "e8b1996580e4ecd51dd402edf4a16d9df88e3a1b",
-        "revCount": 832,
+        "rev": "9c7e7efb0196d644322d388e0fcce7ec4dea2077",
+        "revCount": 1001,
+        "submodules": true,
         "type": "git",
         "url": "https://github.com/caniko/harbor.git"
       },
       "original": {
         "ref": "feat/harbor-monorepo-components",
-        "rev": "e8b1996580e4ecd51dd402edf4a16d9df88e3a1b",
+        "rev": "9c7e7efb0196d644322d388e0fcce7ec4dea2077",
+        "submodules": true,
         "type": "git",
         "url": "https://github.com/caniko/harbor.git"
       }
@@ -3419,7 +3418,7 @@
           "harbor-rs",
           "nixpkgs"
         ],
-        "treefmt-nix": "treefmt-nix_5"
+        "treefmt-nix": "treefmt-nix_6"
       },
       "locked": {
         "lastModified": 1789564824,
@@ -3449,7 +3448,7 @@
           "nixpkgs"
         ],
         "nixpkgs-darwin": "nixpkgs-darwin",
-        "treefmt-nix": "treefmt-nix_8"
+        "treefmt-nix": "treefmt-nix_9"
       },
       "locked": {
         "lastModified": 1792686763,
@@ -3482,7 +3481,7 @@
           "harbor-rs",
           "nixpkgs"
         ],
-        "treefmt-nix": "treefmt-nix_13"
+        "treefmt-nix": "treefmt-nix_14"
       },
       "locked": {
         "lastModified": 1787471536,
@@ -3517,7 +3516,7 @@
           "harbor-rs",
           "nixpkgs"
         ],
-        "treefmt-nix": "treefmt-nix_15"
+        "treefmt-nix": "treefmt-nix_16"
       },
       "locked": {
         "lastModified": 1787471536,
@@ -3549,7 +3548,7 @@
           "nixpkgs"
         ],
         "nixpkgs-darwin": "nixpkgs-darwin_2",
-        "treefmt-nix": "treefmt-nix_20"
+        "treefmt-nix": "treefmt-nix_21"
       },
       "locked": {
         "lastModified": 1792686763,
@@ -3582,7 +3581,7 @@
           "harbor-rs",
           "nixpkgs"
         ],
-        "treefmt-nix": "treefmt-nix_23"
+        "treefmt-nix": "treefmt-nix_24"
       },
       "locked": {
         "lastModified": 1787471536,
@@ -3617,7 +3616,7 @@
           "harbor-rs",
           "nixpkgs"
         ],
-        "treefmt-nix": "treefmt-nix_25"
+        "treefmt-nix": "treefmt-nix_26"
       },
       "locked": {
         "lastModified": 1787471536,
@@ -3673,7 +3672,7 @@
           "canix-toolbelt",
           "nixpkgs"
         ],
-        "treefmt-nix": "treefmt-nix"
+        "treefmt-nix": "treefmt-nix_2"
       },
       "locked": {
         "lastModified": 1791105429,
@@ -3703,7 +3702,7 @@
           "canix-toolbelt",
           "nixpkgs"
         ],
-        "treefmt-nix": "treefmt-nix_2"
+        "treefmt-nix": "treefmt-nix_3"
       },
       "locked": {
         "lastModified": 1790756164,
@@ -3729,7 +3728,7 @@
           "nixpkgs"
         ],
         "rust-overlay": "rust-overlay_2",
-        "treefmt-nix": "treefmt-nix_6"
+        "treefmt-nix": "treefmt-nix_7"
       },
       "locked": {
         "lastModified": 1789534750,
@@ -3754,7 +3753,7 @@
           "nixpkgs"
         ],
         "rust-overlay": "rust-overlay_4",
-        "treefmt-nix": "treefmt-nix_9"
+        "treefmt-nix": "treefmt-nix_10"
       },
       "locked": {
         "lastModified": 1792683091,
@@ -3806,7 +3805,7 @@
           "harbor-rs",
           "nixpkgs"
         ],
-        "treefmt-nix": "treefmt-nix_16"
+        "treefmt-nix": "treefmt-nix_17"
       },
       "locked": {
         "lastModified": 1788983123,
@@ -3832,7 +3831,7 @@
           "nixpkgs"
         ],
         "rust-overlay": "rust-overlay_13",
-        "treefmt-nix": "treefmt-nix_21"
+        "treefmt-nix": "treefmt-nix_22"
       },
       "locked": {
         "lastModified": 1792683091,
@@ -3884,7 +3883,7 @@
           "harbor-rs",
           "nixpkgs"
         ],
-        "treefmt-nix": "treefmt-nix_26"
+        "treefmt-nix": "treefmt-nix_27"
       },
       "locked": {
         "lastModified": 1788983123,
@@ -3922,7 +3921,7 @@
         ],
         "pyproject-build-systems": "pyproject-build-systems",
         "pyproject-nix": "pyproject-nix",
-        "treefmt-nix": "treefmt-nix_12",
+        "treefmt-nix": "treefmt-nix_13",
         "uv2nix": "uv2nix"
       },
       "locked": {
@@ -3988,7 +3987,7 @@
           "fleetix",
           "rust-overlay"
         ],
-        "treefmt-nix": "treefmt-nix_7"
+        "treefmt-nix": "treefmt-nix_8"
       },
       "locked": {
         "lastModified": 1789897434,
@@ -4019,7 +4018,7 @@
         "nixpkgs": "nixpkgs_4",
         "osxcross": "osxcross_3",
         "rust-overlay": "rust-overlay_5",
-        "treefmt-nix": "treefmt-nix_10"
+        "treefmt-nix": "treefmt-nix_11"
       },
       "locked": {
         "lastModified": 1792775513,
@@ -4054,7 +4053,7 @@
         "nixpkgs": "nixpkgs_9",
         "osxcross": "osxcross_6",
         "rust-overlay": "rust-overlay_9",
-        "treefmt-nix": "treefmt-nix_14"
+        "treefmt-nix": "treefmt-nix_15"
       },
       "locked": {
         "lastModified": 1788977721,
@@ -4106,7 +4105,7 @@
           "plinth",
           "rust-overlay"
         ],
-        "treefmt-nix": "treefmt-nix_17"
+        "treefmt-nix": "treefmt-nix_18"
       },
       "locked": {
         "lastModified": 1789462730,
@@ -4146,7 +4145,7 @@
           "plinth",
           "rust-overlay"
         ],
-        "treefmt-nix": "treefmt-nix_22"
+        "treefmt-nix": "treefmt-nix_23"
       },
       "locked": {
         "lastModified": 1792749764,
@@ -4194,7 +4193,7 @@
           "nix-pklx",
           "rust-overlay"
         ],
-        "treefmt-nix": "treefmt-nix_24"
+        "treefmt-nix": "treefmt-nix_25"
       },
       "locked": {
         "lastModified": 1788977721,
@@ -4246,7 +4245,7 @@
           "plinth",
           "rust-overlay"
         ],
-        "treefmt-nix": "treefmt-nix_27"
+        "treefmt-nix": "treefmt-nix_28"
       },
       "locked": {
         "lastModified": 1789462730,
@@ -4298,7 +4297,7 @@
         "simit": "simit_3",
         "solana-source": "solana-source_2",
         "solana-source-darwin": "solana-source-darwin_2",
-        "treefmt-nix": "treefmt-nix_30",
+        "treefmt-nix": "treefmt-nix_31",
         "uv2nix": "uv2nix_5"
       },
       "locked": {
@@ -5187,6 +5186,23 @@
       }
     },
     "nix-cache-pin_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1792571507,
+        "narHash": "sha256-8DdsRc5/cgwAtlHYEicNsMPgNCHR8qT/aurDteVkuQw=",
+        "owner": "caniko",
+        "repo": "nix-cache-pin",
+        "rev": "a69647e9be1afe5f9973732b9286b4e7de3b31b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "caniko",
+        "ref": "0.3.0",
+        "repo": "nix-cache-pin",
+        "type": "github"
+      }
+    },
+    "nix-cache-pin_8": {
       "inputs": {
         "crane": "crane_21",
         "flake-parts": "flake-parts_45",
@@ -5234,7 +5250,7 @@
           "harbor-rs",
           "rust-overlay"
         ],
-        "treefmt-nix": "treefmt-nix_19"
+        "treefmt-nix": "treefmt-nix_20"
       },
       "locked": {
         "path": "./components/nix-manager-core",
@@ -5946,7 +5962,7 @@
         "nixos-images": "nixos-images",
         "nixos-stable": "nixos-stable",
         "nixpkgs": "nixpkgs_5",
-        "treefmt-nix": "treefmt-nix_11"
+        "treefmt-nix": "treefmt-nix_12"
       },
       "locked": {
         "lastModified": 1787124618,
@@ -6846,17 +6862,17 @@
     },
     "nixpkgs_16": {
       "locked": {
-        "lastModified": 1791011291,
-        "narHash": "sha256-V6OBJccNKBo/ktknxlJXZChPoI0NE2lembArBO3CE9k=",
+        "lastModified": 1791487292,
+        "narHash": "sha256-tqM7xDEsaeK1p6VvRygeZ9LkQRpUUkbRT02BHv6hnTM=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "73e728ddb6b7a12d18808f510813a13ee1fe4cce",
+        "rev": "8edc0c72e3a38faf5434e40d1f19431125fe4b30",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "73e728ddb6b7a12d18808f510813a13ee1fe4cce",
+        "rev": "8edc0c72e3a38faf5434e40d1f19431125fe4b30",
         "type": "github"
       }
     },
@@ -7490,17 +7506,17 @@
     "plinth-source": {
       "flake": false,
       "locked": {
-        "lastModified": 1785581994,
-        "narHash": "sha256-KBemurUDJtFmwpSLyJh9PjufBii5ia6XThH+2mD6ptM=",
-        "ref": "fix/dioxus-0.7.10",
-        "rev": "4718cc09d9d1b54cc10e23e60c37b656bf7285a6",
-        "revCount": 235,
+        "lastModified": 1791804307,
+        "narHash": "sha256-6KgeSIF6U084TeSb3i8Pf57S8BkDa4Kk3cti+P9/s9g=",
+        "ref": "migrate/harbor-combined-20261012-features",
+        "rev": "534dfa6dd6217db97b7ccd313501120a3c34d912",
+        "revCount": 394,
         "type": "git",
         "url": "https://github.com/caniko/plinth.git"
       },
       "original": {
-        "ref": "fix/dioxus-0.7.10",
-        "rev": "4718cc09d9d1b54cc10e23e60c37b656bf7285a6",
+        "ref": "migrate/harbor-combined-20261012-features",
+        "rev": "534dfa6dd6217db97b7ccd313501120a3c34d912",
         "type": "git",
         "url": "https://github.com/caniko/plinth.git"
       }
@@ -7646,7 +7662,7 @@
         "crane": "crane_20",
         "flake-parts": "flake-parts_43",
         "harbor": "harbor_2",
-        "nix-cache-pin": "nix-cache-pin_7",
+        "nix-cache-pin": "nix-cache-pin_8",
         "nix-pklx": "nix-pklx_7",
         "nixpkgs": [
           "simit",
@@ -8359,17 +8375,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1789543870,
-        "narHash": "sha256-45ikFmtfgBZgMePIm4GevJ9VjDSWO3PGQgOuuwHDpes=",
+        "lastModified": 1791707771,
+        "narHash": "sha256-w3m8HtAVCfGTHw+gcCTAy7jFHSdGbokm8NngbeFrkek=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "35ca0490d13a3d38c4602d0eb9600a30fa63a367",
+        "rev": "c1cfa7a2c809d364ac1a7e9b3ec418afa3f19793",
         "type": "github"
       },
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "35ca0490d13a3d38c4602d0eb9600a30fa63a367",
+        "rev": "c1cfa7a2c809d364ac1a7e9b3ec418afa3f19793",
         "type": "github"
       }
     },
@@ -8605,7 +8621,7 @@
           "harbor-rs",
           "rust-overlay"
         ],
-        "treefmt-nix": "treefmt-nix_28"
+        "treefmt-nix": "treefmt-nix_29"
       },
       "locked": {
         "path": "./components/secret-manager",
@@ -8639,37 +8655,37 @@
           "harbor",
           "rust-overlay"
         ],
-        "treefmt-nix": "treefmt-nix_31"
+        "treefmt-nix": "treefmt-nix_32"
       },
       "locked": {
-        "lastModified": 1793281006,
-        "narHash": "sha256-yulUc7N81HxoTyh4vjlgXE+3ieMRHLCQiLdoV7v6EWg=",
+        "lastModified": 1794759748,
+        "narHash": "sha256-DBIQrSguTlYZzhjK0g7689XSsRmoH81ooxdvfJLx3dA=",
         "owner": "caniko",
         "repo": "simit",
-        "rev": "baac868484bc4761f0be08611b8458fc60960711",
+        "rev": "e69226f64697964c5bb7ad659ac8dfb363c6e7ec",
         "type": "github"
       },
       "original": {
         "owner": "caniko",
         "repo": "simit",
-        "rev": "baac868484bc4761f0be08611b8458fc60960711",
+        "rev": "e69226f64697964c5bb7ad659ac8dfb363c6e7ec",
         "type": "github"
       }
     },
     "simit_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1791535755,
-        "narHash": "sha256-IB7szOLGEYfXv37iKi4tDxVRlad0MWpHStGDjwTxk5s=",
-        "ref": "feat/harbor-monorepo-components",
-        "rev": "f30d82931ea3689de3c3ea9a0ab0f0e0bfd10b8d",
-        "revCount": 426,
+        "lastModified": 1792754497,
+        "narHash": "sha256-qeeUiiqO8HQO8BPbME1sktGM3yuStkBXdV/MUJdjVZI=",
+        "ref": "trunk",
+        "rev": "4c6841cce19327927ea8a8f6e856276dd5c878f0",
+        "revCount": 858,
         "type": "git",
         "url": "https://github.com/caniko/simit.git"
       },
       "original": {
-        "ref": "feat/harbor-monorepo-components",
-        "rev": "f30d82931ea3689de3c3ea9a0ab0f0e0bfd10b8d",
+        "ref": "trunk",
+        "rev": "4c6841cce19327927ea8a8f6e856276dd5c878f0",
         "type": "git",
         "url": "https://github.com/caniko/simit.git"
       }
@@ -9588,8 +9604,29 @@
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
-          "canix-toolbelt",
-          "harbor-go",
+          "bootswain",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1791885023,
+        "narHash": "sha256-C3alQ2MEt0zVrUSho5NUDo3jmhbff72++bfwoqT9Omo=",
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "rev": "0d6d739a833ba9a9c93034862e4a7b061a062a1c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "treefmt-nix_10": {
+      "inputs": {
+        "nixpkgs": [
+          "harbor-rs",
+          "harbor-meta",
           "nixpkgs"
         ]
       },
@@ -9607,7 +9644,7 @@
         "type": "github"
       }
     },
-    "treefmt-nix_10": {
+    "treefmt-nix_11": {
       "inputs": {
         "nixpkgs": [
           "harbor-rs",
@@ -9628,7 +9665,7 @@
         "type": "github"
       }
     },
-    "treefmt-nix_11": {
+    "treefmt-nix_12": {
       "inputs": {
         "nixpkgs": [
           "ignitix",
@@ -9650,35 +9687,11 @@
         "type": "github"
       }
     },
-    "treefmt-nix_12": {
-      "inputs": {
-        "nixpkgs": [
-          "infernix",
-          "harbor-py",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1786901030,
-        "narHash": "sha256-WSFCsDSE5ffgD2MqzkM2CYjeFiKhRF/dJUN8uedb6YE=",
-        "owner": "numtide",
-        "repo": "treefmt-nix",
-        "rev": "27b3b12a8e6375f28ebe122f07d230ca5459bbfa",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "treefmt-nix",
-        "type": "github"
-      }
-    },
     "treefmt-nix_13": {
       "inputs": {
         "nixpkgs": [
           "infernix",
-          "visual-rubric",
-          "harbor-rs",
-          "harbor-android",
+          "harbor-py",
           "nixpkgs"
         ]
       },
@@ -9702,6 +9715,7 @@
           "infernix",
           "visual-rubric",
           "harbor-rs",
+          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -9724,9 +9738,7 @@
         "nixpkgs": [
           "infernix",
           "visual-rubric",
-          "plinth",
           "harbor-rs",
-          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -9751,7 +9763,7 @@
           "visual-rubric",
           "plinth",
           "harbor-rs",
-          "harbor-meta",
+          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -9776,6 +9788,7 @@
           "visual-rubric",
           "plinth",
           "harbor-rs",
+          "harbor-meta",
           "nixpkgs"
         ]
       },
@@ -9798,6 +9811,8 @@
         "nixpkgs": [
           "infernix",
           "visual-rubric",
+          "plinth",
+          "harbor-rs",
           "nixpkgs"
         ]
       },
@@ -9818,7 +9833,8 @@
     "treefmt-nix_19": {
       "inputs": {
         "nixpkgs": [
-          "nix-manager-core",
+          "infernix",
+          "visual-rubric",
           "nixpkgs"
         ]
       },
@@ -9840,7 +9856,7 @@
       "inputs": {
         "nixpkgs": [
           "canix-toolbelt",
-          "harbor-js",
+          "harbor-go",
           "nixpkgs"
         ]
       },
@@ -9861,9 +9877,7 @@
     "treefmt-nix_20": {
       "inputs": {
         "nixpkgs": [
-          "plinth",
-          "harbor-rs",
-          "harbor-android",
+          "nix-manager-core",
           "nixpkgs"
         ]
       },
@@ -9886,7 +9900,7 @@
         "nixpkgs": [
           "plinth",
           "harbor-rs",
-          "harbor-meta",
+          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -9909,6 +9923,7 @@
         "nixpkgs": [
           "plinth",
           "harbor-rs",
+          "harbor-meta",
           "nixpkgs"
         ]
       },
@@ -9930,9 +9945,7 @@
       "inputs": {
         "nixpkgs": [
           "plinth",
-          "nix-pklx",
           "harbor-rs",
-          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -9956,6 +9969,7 @@
           "plinth",
           "nix-pklx",
           "harbor-rs",
+          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -9978,9 +9992,7 @@
         "nixpkgs": [
           "plinth",
           "nix-pklx",
-          "plinth",
           "harbor-rs",
-          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -10005,7 +10017,7 @@
           "nix-pklx",
           "plinth",
           "harbor-rs",
-          "harbor-meta",
+          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -10030,6 +10042,7 @@
           "nix-pklx",
           "plinth",
           "harbor-rs",
+          "harbor-meta",
           "nixpkgs"
         ]
       },
@@ -10050,7 +10063,10 @@
     "treefmt-nix_28": {
       "inputs": {
         "nixpkgs": [
-          "secret-manager",
+          "plinth",
+          "nix-pklx",
+          "plinth",
+          "harbor-rs",
           "nixpkgs"
         ]
       },
@@ -10071,8 +10087,7 @@
     "treefmt-nix_29": {
       "inputs": {
         "nixpkgs": [
-          "simit",
-          "harbor",
+          "secret-manager",
           "nixpkgs"
         ]
       },
@@ -10087,7 +10102,6 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
-        "rev": "27b3b12a8e6375f28ebe122f07d230ca5459bbfa",
         "type": "github"
       }
     },
@@ -10095,6 +10109,7 @@
       "inputs": {
         "nixpkgs": [
           "canix-toolbelt",
+          "harbor-js",
           "nixpkgs"
         ]
       },
@@ -10116,7 +10131,6 @@
       "inputs": {
         "nixpkgs": [
           "simit",
-          "plinth",
           "harbor",
           "nixpkgs"
         ]
@@ -10140,6 +10154,30 @@
       "inputs": {
         "nixpkgs": [
           "simit",
+          "plinth",
+          "harbor",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1786901030,
+        "narHash": "sha256-WSFCsDSE5ffgD2MqzkM2CYjeFiKhRF/dJUN8uedb6YE=",
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "rev": "27b3b12a8e6375f28ebe122f07d230ca5459bbfa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "rev": "27b3b12a8e6375f28ebe122f07d230ca5459bbfa",
+        "type": "github"
+      }
+    },
+    "treefmt-nix_32": {
+      "inputs": {
+        "nixpkgs": [
+          "simit",
           "nixpkgs"
         ]
       },
@@ -10160,7 +10198,7 @@
     "treefmt-nix_4": {
       "inputs": {
         "nixpkgs": [
-          "dns-manager",
+          "canix-toolbelt",
           "nixpkgs"
         ]
       },
@@ -10181,9 +10219,7 @@
     "treefmt-nix_5": {
       "inputs": {
         "nixpkgs": [
-          "fleetix",
-          "harbor-rs",
-          "harbor-android",
+          "dns-manager",
           "nixpkgs"
         ]
       },
@@ -10206,7 +10242,7 @@
         "nixpkgs": [
           "fleetix",
           "harbor-rs",
-          "harbor-meta",
+          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -10229,6 +10265,7 @@
         "nixpkgs": [
           "fleetix",
           "harbor-rs",
+          "harbor-meta",
           "nixpkgs"
         ]
       },
@@ -10249,8 +10286,8 @@
     "treefmt-nix_8": {
       "inputs": {
         "nixpkgs": [
+          "fleetix",
           "harbor-rs",
-          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -10272,7 +10309,7 @@
       "inputs": {
         "nixpkgs": [
           "harbor-rs",
-          "harbor-meta",
+          "harbor-android",
           "nixpkgs"
         ]
       },
@@ -10663,7 +10700,7 @@
           "harbor-rs",
           "rust-overlay"
         ],
-        "treefmt-nix": "treefmt-nix_18"
+        "treefmt-nix": "treefmt-nix_19"
       },
       "locked": {
         "lastModified": 1789820818,
